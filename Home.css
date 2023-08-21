@@ -7,7 +7,7 @@ h1{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
-p.about{
+p.about{ 
     text-align: center;
 }
 @media screen and (max-width:600px){

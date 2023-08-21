@@ -12,10 +12,11 @@ form{
     max-width: 550px;
     width: 90%;
     background: white;
-    margin: 17vh auto 0 auto;
+    margin: 10vh auto 0 auto;
     padding: 40px;
     border-radius: 3px;
     box-sizing: border-box;
+    margin-bottom: 10%;
 }
 
 input, textarea{
