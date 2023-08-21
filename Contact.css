@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(110deg, #ffbbcc, #feeecc) ;
+}
+h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Walter Turncoat', cursive;
+    color: white;
+}
+
+form{
+    max-width: 550px;
+    width: 90%;
+    background: white;
+    margin: 17vh auto 0 auto;
+    padding: 40px;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    resize: none;
+    border: none;
+    border-bottom: 1px solid #D3D3D3;
+}
+
+input[type="text"]:focus, input[type="email"]:focus, textarea:focus{
+    border-bottom: 1px solid #ffbbcc ;
+}
+
+textarea::-webkit-scrollbar{
+    width: 4px;
+}
+
+textarea::-webkit-scrollbar-thumb{
+    background-color:#ffbbcc ;
+}
+
+.container button{
+    margin-top: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 90%;
+    max-width: 200px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+.container ::placeholder{
+    color: darkgrey;
+}
+
+.container label{
+    color: black;
+    font-size: 24px;
+}
+
+.error{
+    color: red;
+}
+.error-border{
+    border-bottom: 1px solid red;
+}
+
+#success{
+    color: #28A745;
+}
+
+@media screen and (max-width:600px){
+    body{
+        min-height: 500px;
+    }
+}

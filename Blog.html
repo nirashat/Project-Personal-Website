@@ -1,0 +1,135 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="Blog.css">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <title>Nirasha</title>
+        <style>
+            header{
+              background: url(man.jpg);
+              background-size: cover;
+              background-position: center;
+              min-height: 1000px;
+            }
+            @media screen and (max-width:600px){
+              header{
+                min-height: 500px;
+              }
+            }
+        </style>
+    </head>
+    <body>
+        <!--Nav Bar Begin-->
+        <header>
+            <nav class="nav-wrapper pink lighten-4">
+                <div class="container">
+                    <a href="" class="brand-logo">Nirasha Silva
+                        <!--<img src="logo.png" alt="">-->
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="#">
+                            <i class="material-icons">home</i>
+                        </a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                    <ul class="sidenav pink lighten-4" id="mobile-menu">
+                        <li><a href="#">
+                            <i class="material-icons">home</i>
+                        </a></li>
+                        <li ><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--Footer-->
+        <footer class="page-footer pink lighten-4">
+            <link rel="icon" type="image/x-icon" href="logo.png">
+            <h1 class="contact" id="contact">Contact Us</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Email Address</b></h5>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    email
+                                </i>
+                                nirashat@efuturesworld.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Phone number</b></h5>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    phone
+                                </i>
+                                +94 76327 5371
+                            </p>
+                        </a>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    phone
+                                </i>
+                                +94 11258 1980
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Social Media</b></h5>
+                        <a href="">
+                            <img src="linkedin.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="instagram.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="whatsapp.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">
+                                <img src="gmail.png" alt="">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <li ><a href="#">Terms & Conditions</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </div>   
+                </div>
+            </div>
+            <div class="footer-copyright white-text pink lighten-3">  
+                <p>
+                    <div class="container left-align">Copyright &copy; 2023</div>
+                </p>   
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+    </body>
+</html>
