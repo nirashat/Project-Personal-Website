@@ -1,0 +1,343 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Import Google Icon Font-->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="Colombo_Blog.css">
+        <link rel="icon" type="image/x-icon" href="logo.png">
+        <title>Nirasha</title>
+    </head>
+    <body>
+        <!--Nav Bar Begin-->
+        <header>
+            <nav class="nav-wrapper pink lighten-4">
+                <div class="container">
+                    <a href="" class="brand-logo">Nirasha Silva
+                        <!--<img src="logo.png" alt="">-->
+                    </a>
+                    <a href="" class="sidenav-trigger" data-target="mobile-menu">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <ul class="right hide-on-med-and-down">
+                        <li><a href="Home.html">
+                            <i class="material-icons">home</i>
+                        </a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="sidenav pink lighten-4" id="mobile-menu">
+                        <li><a href="Home.html">
+                            <i class="material-icons">home</i>
+                        </a></li>
+                        <li ><a href="About.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <!--BP Section-->
+        <section class="container section" id="blogpage">
+            <!--BP Image Section-->
+            <h1 class="blogpageimg" id="blogpageimg">Bournemouth</h1>
+            <div class="row">
+                <div class="row-2">
+                    <div class="col s12 l6 ">
+                        <div class="slider">
+                            <ul class="slides">
+                                <li>
+                                    <img src="Bournemouth1.jpg"> 
+                                </li>
+                                <li>
+                                    <img src="Bournemouth2.jpg"> 
+                                </li>
+                                <li>
+                                    <img src="Bournemouth3.jpg"> 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Image Details Section-->
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Bournemouth</span>
+                            <P>Located in the South West region of England, approximately 94 miles (151 km) southwest of London</P>
+                            <p>Bournemouth is a coastal resort town on the south coast in the Bournemouth, Christchurch and Poole borough of Dorset, England.</p>
+                            <p>Bournemouth's own coastline stretches from Sandbanks to Christchurch Harbour and comprises mainly sandy beaches backed by gravel and sandy clay cliffs.</p>
+                            <p> In recent years, Bournemouth has become a popular nightlife destination with UK visitors and many clubs, bars and restaurants are located within the town centre.</p>
+                            <a href="" class="share">
+                                <i class="material-icons white">share</i>
+                            </a>
+                            <button class="btn pink lighten-4 waves-effect waves-light">
+                                <i class="material-icons">share</i>
+                            </button>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <!--Author Details Section-->
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="card">
+                        <div class="card-content author">
+                            <img src="Profile.jpg" alt="" class="profile">
+                            <span class="card-title">Author's Details</span>
+                            <P>Name: Nirasha Silva</P>
+                            <p>Age: 21</p>
+                            <p>Country: Sri Lanka</p>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <button class="btn pink lighten-4 waves-effect waves-light posts">Related Posts</button>
+            <!--Comment DOwn Details Section-->
+            <div class="row">
+                <div class="col s8 l8">
+                    <div class="card comment">
+                        <div class="card-content">
+                            <span class="card-title">Comment down below</span>
+                            <i class="material-icons prefix">comment</i>
+                            <label for="comment"></label>
+                            <input type="text"  id="comment" placeholder="Your comment" autocomplete="off">
+                            <small class="error"></small>
+                            
+                        </div>
+                        <button class="btn pink lighten-4 waves-effect waves-light Comment">Comment</button>
+                    </div>           
+                </div>
+            </div>
+            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l12">
+                        <form onsubmit="event.preventDefault(); validateForm()">
+                            <h1 class="blue-text text-lighten-1">Comment down below</h1>
+        
+                            <i class="material-icons prefix">comment</i>
+                            <label for="comment"></label>
+                            <input type="text"  id="comment" placeholder="Your comment" autocomplete="off">
+                            <small class="error"></small>
+
+                            <div class="center">
+                                <button class="btn pink lighten-4 waves-effect waves-light white-text submit">Comment</button>
+                                <p id="success"></p>
+                            </div>
+                        </form>
+                    </div>  
+                </div>      
+            </div>
+            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
+            <!--Newsletter-->
+            <div class="row">
+                <div class="col s8 l6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Join Our Newsletter</span>
+                            <i class="material-icons">email</i>
+                            <label for="name"></label>
+                            <input type="text"  id="name" placeholder="Your Email Address" autocomplete="off">
+                            
+                        </div>
+                        <button class="btn purple lighten-4 waves-effect waves-light Submit">Submit</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l12">
+                        <form onsubmit="event.preventDefault(); validateForm()">
+                            <h1 class="blue-text text-lighten-1">Join Our Newsletter</h1>
+        
+                            <i class="material-icons prefix">email</i>
+                            <label for="email"></label>
+                            <input type="email"  id="email" placeholder="Your email" autocomplete="off">
+                            <small class="error"></small>
+
+                            <div class="center">
+                                <button class="btn purple lighten-4 waves-effect waves-light white-text submit">Submit</button>
+                                <p id="success"></p>
+                            </div>
+                        </form>
+                    </div>  
+                </div>      
+            </div>
+        </section>
+        <!--Image Details Section-->
+        <!--<section class="container_Details" id="imagedetails">
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Website</span>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
+                            <a href="" class="share">
+                                <i class="material-icons white">share</i>
+                            </a>
+                            <button class="btn pink lighten-4 waves-effect waves-light">
+                                <i class="material-icons">share</i>
+                            </button>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+        </section>-->
+        <!--Author Details Section-->
+        <!--<section class="container_Details_section" id="authordetails">
+            <div class="row">
+                <div class="col s12 l12">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Website</span>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
+                        </div>
+                    </div>           
+                </div>
+            </div>
+            <button class="btn pink lighten-4 waves-effect waves-light posts">Related Posts</button>
+        </section>-->
+        <!--Coment DOwn Details Section-->
+        <!--<section class="container_Details_section" id="authordetails">
+            <div class="row">
+                <div class="col s8 l8">
+                    <div class="card comment">
+                        <div class="card-content">
+                            <span class="card-title">Comment down below</span>
+                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
+                        </div>
+                        <button class="btn pink lighten-4 waves-effect waves-light Comment">Comment</button>
+                    </div>           
+                </div>
+            </div>
+            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
+            <div class="row">
+                <div class="col s8 l6">
+                    <div class="card">
+                        <div class="card-content">
+                            <span class="card-title">Join Our Newsletter</span>
+                            <i class="material-icons">email</i>
+                            <label for="name"></label>
+                            <input type="text"  id="name" placeholder="Your Email Address" autocomplete="off">
+                            
+                        </div>
+                        <button class="btn purple lighten-4 waves-effect waves-light Submit">Submit</button>
+                    </div>           
+                </div>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l12">
+                        <form onsubmit="event.preventDefault(); validateForm()">
+                            <h1 class="blue-text text-lighten-1">Join Our Newsletter</h1>
+        
+                            <i class="material-icons prefix">email</i>
+                            <label for="email"></label>
+                            <input type="email"  id="email" placeholder="Your email" autocomplete="off">
+                            <small class="error"></small>
+
+                            <div class="center">
+                                <button class="btn purple lighten-4 waves-effect waves-light black-text submit">Submit</button>
+                                <p id="success"></p>
+                            </div>
+                        </form>
+                    </div>  
+                </div>      
+            </div>
+        </section>-->
+        <!--Footer-->
+        <footer class="page-footer pink lighten-4">
+            <link rel="icon" type="image/x-icon" href="logo.png">
+            <h1 class="contact" id="contact">Contact Us</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Email Address</b></h5>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    email
+                                </i>
+                                nirashat@efuturesworld.com
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Phone number</b></h5>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    phone
+                                </i>
+                                +94 76327 5371
+                            </p>
+                        </a>
+                        <a href="#" class="white-text">
+                            <p>
+                                <i class="material-icons blue">
+                                    phone
+                                </i>
+                                +94 11258 1980
+                            </p>
+                        </a>
+                    </div>
+                    <div class="col s12 l4 black-text">
+                        <h5><b>Social Media</b></h5>
+                        <a href="">
+                            <img src="linkedin.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="instagram.png" alt="">
+                        </a>
+                        <a href="">
+                            <img src="whatsapp.png" alt="">
+                        </a>
+                        <p>
+                            <a href="">
+                                <img src="gmail.png" alt="">
+                            </a>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <li ><a href="#">Terms & Conditions</a></li>
+                        <li><a href="About.html">About</a></li>
+                        <li><a href="Portfolio.html">Portfolio</a></li>
+                        <li><a href="Blog.html">Blog</a></li>
+                        <li><a href="Contact.html">Contact</a></li>
+                    </div>   
+                </div>
+            </div>
+            <div class="footer-copyright white-text pink lighten-3">  
+                <p>
+                    <div class="container left-align">Copyright &copy; 2023</div>
+                </p>   
+            </div>
+        </footer>
+        <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+        <!-- Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+
+            $(document).ready(function(){
+                $('.slider').slider();
+            });
+        </script>
+    </body>
+</html>
