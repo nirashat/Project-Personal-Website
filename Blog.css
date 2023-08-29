@@ -1,5 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&display=swap');
+
 body{
     background: linear-gradient(110deg, #ffbbcc, #feeecc) ;
+
 }
 h1{
     text-align: center;
@@ -7,9 +10,65 @@ h1{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
-.card-title{
+.card{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+}
+  
+.responsive-img {
+    opacity: 1;    
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.card-content.overlay {
+    transition: .5s ease;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
+  
+.card:hover .responsive-img {
+    opacity: 0.3;
+}
+  
+.card:hover .card-content.overlay {
+    opacity: 1;
+}
+  
+.card-title.blog {
+    color:dimgrey;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 16px 32px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+button.btn{
+    border-radius: 50px;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 @media screen and (max-width:600px){
     body{
         min-height: 500px;

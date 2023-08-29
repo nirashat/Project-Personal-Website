@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&family=Walter+Turncoat&display=swap');
+
 body{
     background: linear-gradient(110deg, #ffbbcc, #feeecc) ;
 }
@@ -7,9 +9,46 @@ h1{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
+.col.who{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+p.who{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+}
 
-
-
+p.details{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 16px;
+}
+.card{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+.card-title.project{
+    text-align: center;
+    font-weight: bold;
+}
+.card-content.interests{
+    font-family: 'Cormorant', serif;
+    font-size: 18px;
+}
+button.btn{
+    border-radius: 50px;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 @media screen and (max-width:600px){
     body{
         min-height: 500px;
