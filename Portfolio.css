@@ -7,6 +7,9 @@ h1{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
+button.btn{
+    border-radius: 50px;
+}
 @media screen and (max-width:600px){
     body{
         min-height: 500px;

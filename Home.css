@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
 body{
     background: linear-gradient(110deg, #ffbbcc, #feeecc) ;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
 }
 h1{
     text-align: center;
@@ -7,8 +12,28 @@ h1{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
+h2{
+    text-align: center;
+}
+p.hero{
+    text-align: center;
+}
+h4{
+    font-family: 'Paprika', cursive;
+}
 p.about{ 
     text-align: center;
+}
+button.btn{
+    border-radius: 50px;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 @media screen and (max-width:600px){
     body{
