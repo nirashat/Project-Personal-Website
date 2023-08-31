@@ -105,7 +105,24 @@
                     </div>           
                 </div>
             </div>
-            <button class="btn pink lighten-4 waves-effect waves-light posts">Related Posts</button>
+            <!--Related Posts Button-->
+            <button class="btn pink lighten-4 waves-effect waves-light posts" id="myBtn">Related Posts</button>
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p>
+                        <a href="https://www.bournemouth.co.uk/">Bournemouth - Your Official Bournemouth Guide</a>
+                    </p>
+                    <p>
+                        <a href="https://www.visitbournemouth.com/">Visit Bournemouth</a>
+                    </p>
+                    <p>
+                        <a href="https://www.tripadvisor.com/Tourism-g186262-Bournemouth_Dorset_England-Vacations.html">Best Places to Visit in Bournemouth, England (2023)</a>
+                    </p>
+                </div>
+            </div>
             <!--Comment DOwn Details Section-->
             <div class="row">
                 <div class="col s8 l8">
@@ -267,13 +284,14 @@
         </section>-->
         <!--Footer-->
         <footer class="page-footer pink lighten-4">
-            <link rel="icon" type="image/x-icon" href="logo.png">
-            <h1 class="contact" id="contact">Contact Us</h1>
+            <h1 class="contact" id="contact">Contact Us <br>
+                <img src="logo.png" alt="">
+            </h1>
             <div class="container">
                 <div class="row">
                     <div class="col s12 l4 black-text">
                         <h5><b>Email Address</b></h5>
-                        <a href="#" class="white-text">
+                        <a href="mailto:nirashat@efuturesworld.com" class="white-text">
                             <p>
                                 <i class="material-icons blue">
                                     email
@@ -284,7 +302,7 @@
                     </div>
                     <div class="col s12 l4 black-text">
                         <h5><b>Phone number</b></h5>
-                        <a href="#" class="white-text">
+                        <a href="tel:+94763275371" class="white-text">
                             <p>
                                 <i class="material-icons blue">
                                     phone
@@ -292,7 +310,7 @@
                                 +94 76327 5371
                             </p>
                         </a>
-                        <a href="#" class="white-text">
+                        <a href="tel:+94112581980" class="white-text">
                             <p>
                                 <i class="material-icons blue">
                                     phone
@@ -350,5 +368,6 @@
                 $('.slider').slider();
             });
         </script>
+        <script src="RelatedPosts_Modal.js"></script>
     </body>
 </html>

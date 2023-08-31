@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@500&display=swap');
+
 
 body{
     background: linear-gradient(110deg, #ffbbcc, #feeecc) ;
@@ -14,19 +17,25 @@ h1{
 }
 h2{
     text-align: center;
+    font-size:  40px;
 }
 p.hero{
     text-align: center;
+    font-family: 'Cormorant', serif;
 }
 h4{
     font-family: 'Paprika', cursive;
 }
 p.about{ 
     text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 19px;
 }
 button.btn{
     border-radius: 50px;
+    font-family: 'Outfit', sans-serif;
 }
+
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;

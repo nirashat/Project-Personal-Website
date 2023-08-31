@@ -18,7 +18,9 @@ form{
     box-sizing: border-box;
     margin-bottom: 10%;
 }
-
+#map{
+    align-items: center;
+}
 input, textarea{
     width: 100%;
     padding: 10px;

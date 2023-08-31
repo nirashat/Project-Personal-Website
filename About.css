@@ -17,7 +17,7 @@ h1{
 p.who{
     text-align: center;
     font-family: 'Cormorant', serif;
-    font-size: 18px;
+    font-size: 24px;
 }
 
 p.details{
@@ -40,6 +40,11 @@ p.details{
 }
 button.btn{
     border-radius: 50px;
+}
+.responsive-img.who {
+    width: 75%;
+    height: auto;
+    border-radius: 40px;
 }
 @keyframes fadeInAnimation {
     0% {
