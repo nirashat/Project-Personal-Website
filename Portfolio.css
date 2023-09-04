@@ -16,8 +16,26 @@ h2{
     font-family: 'Walter Turncoat', cursive;
     color: white;
 }
-p{
+p.project_detail{
     font-family: 'Paprika', cursive;
+}
+p.project_detail_1{
+    font-family: 'Paprika', cursive;
+}
+p.project_detail_2{
+    font-family: 'Paprika', cursive;
+}
+
+ul.vs{
+    font-family: 'Paprika', cursive;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+li.vs{
+    font-family: 'Paprika', cursive;
+    text-align: center;
+    margin-bottom: 10px;
 }
 button.btn{
     border-radius: 50px;

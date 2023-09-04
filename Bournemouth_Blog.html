@@ -5,11 +5,13 @@
         <!--Import Google Icon Font-->
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
         <link rel="stylesheet" href="Blog_Details.css">
-        <link rel="stylesheet" href="newsletter3.css">
+        <link rel="stylesheet" href="newsletter.css">
         <link rel="icon" type="image/x-icon" href="logo.png">
         <title>Nirasha</title>
+
     </head>
     <body>
         <!--Nav Bar Begin-->
@@ -72,20 +74,33 @@
                     <div class="card">
                         <div class="card-content">
                             <span class="card-title">Bournemouth</span>
-                            <P>Located in the South West region of England, approximately 94 miles (151 km) southwest of London</P>
+                            <P class="image">Located in the South West region of England, approximately 94 miles (151 km) southwest of London</P>
                             <br>
-                            <p>Bournemouth is a coastal resort town on the south coast in the Bournemouth, Christchurch and Poole borough of Dorset, England.</p>
+                            <p class="image">Bournemouth is a coastal resort town on the south coast in the Bournemouth, Christchurch and Poole borough of Dorset, England.</p>
                             <br>
-                            <p>Bournemouth's own coastline stretches from Sandbanks to Christchurch Harbour and comprises mainly sandy beaches backed by gravel and sandy clay cliffs.</p>
+                            <p class="image">Bournemouth's own coastline stretches from Sandbanks to Christchurch Harbour and comprises mainly sandy beaches backed by gravel and sandy clay cliffs.</p>
                             <br>
-                            <p> In recent years, Bournemouth has become a popular nightlife destination with UK visitors and many clubs, bars and restaurants are located within the town centre.</p>
+                            <p class="image"> In recent years, Bournemouth has become a popular nightlife destination with UK visitors and many clubs, bars and restaurants are located within the town centre.</p>
                             <br>
-                            <a href="" class="share">
-                                <i class="material-icons white">share</i>
-                            </a>
-                            <button class="btn pink lighten-4 waves-effect waves-light">
-                                <i class="material-icons">share</i>
-                            </button>
+                            <br>
+                            <div class="row">
+                                <div class="col s12 l12">
+                                    <div class="btn__container">
+                                        <a href="https://www.facebook.com/" class="btn-f">
+                                            <i class="material-icons">facebook</i>
+                                            <span>facebook</span>
+                                        </a>
+                                        <a href="https://www.instagram.com/" class="btn-instagram">
+                                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                                            <span>instagram</span>
+                                        </a>
+                                        <a href="https://mail.google.com/mail/u/0/" class="btn-g">
+                                            <i class="material-icons">gmail</i>
+                                            <span>gmail</span>
+                                        </a>
+                                    </div>         
+                                </div>
+                            </div>
                         </div>
                     </div>           
                 </div>
@@ -125,7 +140,7 @@
 
             <!--Comment DOwn Details Section-->
             <div class="row">
-                <div class="col s8 l8">
+                <div class="col s12 l10">
                     <div class="card comment">
                         <div class="card-content">
                             <span class="card-title">Comment down below</span>
@@ -140,28 +155,8 @@
                 </div>
             </div>
             <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l12">
-                        <form onsubmit="event.preventDefault(); validateForm()">
-                            <h1 class="blue-text text-lighten-1">Comment down below</h1>
-        
-                            <i class="material-icons prefix">comment</i>
-                            <label for="comment"></label>
-                            <input type="text"  id="comment" placeholder="Your comment" autocomplete="off">
-                            <small class="error"></small>
 
-                            <div class="center">
-                                <button class="btn pink lighten-4 waves-effect waves-light white-text submit">Comment</button>
-                                <p id="success"></p>
-                            </div>
-                        </form>
-                    </div>  
-                </div>      
-            </div>
-            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
-
-            <!--Newsletter-->
+            <!--Newsletter
             <div class="row">
                 <div class="col s8 l6">
                     <div class="card">
@@ -195,8 +190,24 @@
                     </div>  
                 </div>      
             </div>
-        </section>
+            <form action="/action_page.php">
+                <div class="container">
+                  <h3>Subscribe to our Newsletter</h3>
+                </div>
+              
+                <div class="container" style="background-color:white">
+                  <input type="text" placeholder="Name" name="name" required>
+                  <input type="text" placeholder="Email address" name="mail" required>
+                </div>
+              
+                <div class="container center-align">
+                    <button class="btn purple lighten-4 waves-effect waves-light white-text subscribe">Subscribe</button>
+                    <p id="success"></p>
+                </div>
+            </form>-->
 
+        </section>
+        
         <!--Image Details Section-->
         <!--<section class="container_Details" id="imagedetails">
             <div class="row">
@@ -284,6 +295,20 @@
                 </div>      
             </div>
         </section>-->
+        <section>
+            <div class="container subscribe">
+                <div class="content subscribe">
+                    <form class="subscription">
+                        <input class="add-email" type="email" placeholder="subscribe@me.now">
+                        <button class="submit-email" type="button">
+                            <span class="before-submit">Subscribe</span>
+                            <span class="after-submit">Thank you for subscribing!</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
         <!--Footer-->
         <footer class="page-footer pink lighten-4">
             <h1 class="contact" id="contact">Contact Us <br>
@@ -372,5 +397,11 @@
 
         </script>
         <script src="RelatedPosts_Modal.js"></script>
+        <script>
+            document.querySelector('.submit-email').addEventListener('mousedown', (e) => {
+                e.preventDefault();
+                document.querySelector('.subscription').classList.add('done');
+            });
+        </script>
     </body>
 </html>

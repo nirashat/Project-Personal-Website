@@ -35,6 +35,46 @@ button.btn{
     border-radius: 50px;
     font-family: 'Outfit', sans-serif;
 }
+.card {
+    position: relative;
+    width: 100%;
+}
+  
+.responsive-img.project {
+    opacity: 1;    
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+    backface-visibility: hidden;
+}
+  
+.card-content.overlay {
+    transition: .5s ease;
+    opacity:0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+  
+.card:hover .responsive-img.project {
+    opacity: 0.3;
+}
+  
+.card:hover .card-content.overlay {
+    opacity: 1;
+}
+  
+.card-title.project {
+    color:dimgrey;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 16px 32px;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
 
 @keyframes fadeInAnimation {
     0% {
