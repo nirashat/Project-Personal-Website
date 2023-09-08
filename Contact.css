@@ -44,13 +44,13 @@ textarea::-webkit-scrollbar-thumb{
 }
 
 .container button{
-    margin-top: 30px;
+    margin: 20px auto 0;
     font-size: 18px;
     font-weight: bold;
     width: 90%;
     max-width: 200px;
     cursor: pointer;
-    border-radius: 3px;
+    border-radius: 20px;
 }
 .container ::placeholder{
     color: darkgrey;
@@ -61,19 +61,6 @@ textarea::-webkit-scrollbar-thumb{
     font-size: 24px;
 }
 
-.error{
-    color: red;
-}
-.error-border{
-    border-bottom: 1px solid red;
-}
-
-#success{
-    color: #28A745;
-}
-button.btn{
-    border-radius: 50px;
-}
 @media screen and (max-width:600px){
     body{
         min-height: 500px;

@@ -129,175 +129,53 @@
                 <div class="modal-content">
                     <span class="close">&times;</span>
                     <p>
-                        <a href="https://www.bournemouth.co.uk/">Bournemouth - Your Official Bournemouth Guide</a>
+                        <a href="https://www.thrillophilia.com/countries/maldives">Maldives Tourism: Places, Best Time & Travel Guides 2023</a>
                     </p>
                     <p>
-                        <a href="https://www.visitbournemouth.com/">Visit Bournemouth</a>
+                        <a href="https://visitmaldives.com/">Visit Maldives - The Sunny Side of Life</a>
                     </p>
                     <p>
-                        <a href="https://www.tripadvisor.com/Tourism-g186262-Bournemouth_Dorset_England-Vacations.html">Best Places to Visit in Bournemouth, England (2023)</a>
+                        <a href="https://www.tripadvisor.com/Tourism-g293953-Maldives-Vacations.html">Best Places to Visit in Maldives (2023)</a>
                     </p>
                 </div>
             </div>
+            
             <!--Comment DOwn Details Section-->
-            <div class="row">
-                <div class="col s8 l8">
-                    <div class="card comment">
-                        <div class="card-content">
-                            <span class="card-title">Comment down below</span>
+            <section id="app">
+                <div class="container comment">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="comment">
+                                <p v-for="items in item" v-text="items"></p>
+                            </div><!--End Comment-->
+                        </div><!--End col -->
+                    </div><!-- End row -->
+                    <div class="row center-align">
+                        <div class="col-6">
+                            <h3>Comment down below</h3>
                             <i class="material-icons prefix">comment</i>
-                            <label for="comment"></label>
-                            <input type="text"  id="comment" placeholder="Your comment" autocomplete="off">
-                            <small class="error"></small>
-                            
-                        </div>
-                        <button class="btn pink lighten-4 waves-effect waves-light Comment">Comment</button>
-                    </div>           
+                            <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()">
+                            </textarea>
+                            <button v-on:click="addItem()" class='primaryContained pink lighten-4 waves-effect waves-light center-align' type="submit">Add Comment</button>
+                        </div><!-- End col -->
+                    </div><!--End Row -->
+                </div><!--End Container -->
+                <a href="Portfolio.html">
+                    <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
+                </a>
+                <!--Newsletter-->
+                <div class="wrapper right">
+                    <input type="checkbox" id="click">
+                    <label for="click" class="btn-1 pink lighten-4 waves-effect waves-light">SUBSCRIBE</label>
+                    <div class="field">
+                      <input type="text" placeholder="Email Address">
+                      <label for="click" class="btn-2 pink lighten-4 waves-effect waves-light ">SUBSCRIBE</label>
+                    </div>
                 </div>
-            </div>
-            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l12">
-                        <form onsubmit="event.preventDefault(); validateForm()">
-                            <h1 class="blue-text text-lighten-1">Comment down below</h1>
-        
-                            <i class="material-icons prefix">comment</i>
-                            <label for="comment"></label>
-                            <input type="text"  id="comment" placeholder="Your comment" autocomplete="off">
-                            <small class="error"></small>
 
-                            <div class="center">
-                                <button class="btn pink lighten-4 waves-effect waves-light white-text submit">Comment</button>
-                                <p id="success"></p>
-                            </div>
-                        </form>
-                    </div>  
-                </div>      
-            </div>
-            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
-            <!--Newsletter-->
-            <div class="row">
-                <div class="col s8 l6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Join Our Newsletter</span>
-                            <i class="material-icons">email</i>
-                            <label for="name"></label>
-                            <input type="text"  id="name" placeholder="Your Email Address" autocomplete="off">
-                            
-                        </div>
-                        <button class="btn purple lighten-4 waves-effect waves-light Submit">Submit</button>
-                    </div>           
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l12">
-                        <form onsubmit="event.preventDefault(); validateForm()">
-                            <h1 class="blue-text text-lighten-1">Join Our Newsletter</h1>
-        
-                            <i class="material-icons prefix">email</i>
-                            <label for="email"></label>
-                            <input type="email"  id="email" placeholder="Your email" autocomplete="off">
-                            <small class="error"></small>
-
-                            <div class="center">
-                                <button class="btn purple lighten-4 waves-effect waves-light white-text submit">Submit</button>
-                                <p id="success"></p>
-                            </div>
-                        </form>
-                    </div>  
-                </div>      
-            </div>
+            </section><!-- end App -->
         </section>
-        <!--Image Details Section-->
-        <!--<section class="container_Details" id="imagedetails">
-            <div class="row">
-                <div class="col s12 l12">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Website</span>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
-                            <a href="" class="share">
-                                <i class="material-icons white">share</i>
-                            </a>
-                            <button class="btn pink lighten-4 waves-effect waves-light">
-                                <i class="material-icons">share</i>
-                            </button>
-                        </div>
-                    </div>           
-                </div>
-            </div>
-        </section>-->
-        <!--Author Details Section-->
-        <!--<section class="container_Details_section" id="authordetails">
-            <div class="row">
-                <div class="col s12 l12">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Website</span>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
-                        </div>
-                    </div>           
-                </div>
-            </div>
-            <button class="btn pink lighten-4 waves-effect waves-light posts">Related Posts</button>
-        </section>-->
-        <!--Coment DOwn Details Section-->
-        <!--<section class="container_Details_section" id="authordetails">
-            <div class="row">
-                <div class="col s8 l8">
-                    <div class="card comment">
-                        <div class="card-content">
-                            <span class="card-title">Comment down below</span>
-                            <P>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam, incidunt. Qui inventore voluptatum veniam repellat adipisci dolor, quisquam magnam vitae! Maxime sit amet nulla vel ad alias perferendis ratione quod.</P>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi ducimus molestiae, illo eos cupiditate necessitatibus explicabo unde iste beatae nobis corrupti autem quidem atque, nisi vel sapiente a, praesentium cumque.</p>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam non, odio vero aperiam quisquam distinctio illo quia molestias at minima ut cumque error repellendus et explicabo voluptas odit, quibusdam officia.</p>
-                        </div>
-                        <button class="btn pink lighten-4 waves-effect waves-light Comment">Comment</button>
-                    </div>           
-                </div>
-            </div>
-            <button class="btn pink lighten-4 waves-effect waves-light learn">Learn More</button>
-            <div class="row">
-                <div class="col s8 l6">
-                    <div class="card">
-                        <div class="card-content">
-                            <span class="card-title">Join Our Newsletter</span>
-                            <i class="material-icons">email</i>
-                            <label for="name"></label>
-                            <input type="text"  id="name" placeholder="Your Email Address" autocomplete="off">
-                            
-                        </div>
-                        <button class="btn purple lighten-4 waves-effect waves-light Submit">Submit</button>
-                    </div>           
-                </div>
-            </div>
-            <div class="container">
-                <div class="row">
-                    <div class="col s12 l12">
-                        <form onsubmit="event.preventDefault(); validateForm()">
-                            <h1 class="blue-text text-lighten-1">Join Our Newsletter</h1>
-        
-                            <i class="material-icons prefix">email</i>
-                            <label for="email"></label>
-                            <input type="email"  id="email" placeholder="Your email" autocomplete="off">
-                            <small class="error"></small>
 
-                            <div class="center">
-                                <button class="btn purple lighten-4 waves-effect waves-light black-text submit">Submit</button>
-                                <p id="success"></p>
-                            </div>
-                        </form>
-                    </div>  
-                </div>      
-            </div>
-        </section>-->
         <!--Footer-->
         <footer class="page-footer pink lighten-4">
             <h1 class="contact" id="contact">Contact Us <br>
@@ -340,7 +218,7 @@
                         <a href="https://www.linkedin.com/in/nirasha-silva/">
                             <img src="linkedin.png" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://www.instagram.com/">
                             <img src="instagram.png" alt="">
                         </a>
                         <a href="https://wa.me/94763275371">
@@ -350,6 +228,9 @@
                             <a href="mailto:nirashat@efuturesworld.com">
                                 <img src="gmail.png" alt="">
                             </a>
+                            <a href="https://join.skype.com/invite/iaiBe357cmB5">
+                                <img src="skype.png" alt="">
+                            </a>
                         </p>
                     </div>
                     <div class="container center-align">
@@ -357,19 +238,28 @@
                             <button class="btn blue white-text waves-effect waves-light">Contact</button>
                         </a>
                     </div>
-                    <div class="row">
-                        <li ><a href="#">Terms & Conditions</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Portfolio.html">Portfolio</a></li>
-                        <li><a href="Blog.html">Blog</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                    </div>   
+                    <div class="col s12 l3 lighten-4 center-align">
+                        <a href="About.html">About</a>
+                    </div>
+                    <div class="col s12 l3 lighten-4 center-align">
+                        <a href="Portfolio.html">Portfolio</a>
+                    </div>
+                    <div class="col s12 l3 lighten-4 center-align">
+                        <a href="Blog.html">Blog</a>
+                    </div>
+                    <div class="col s12 l3 lighten-4 center-align">
+                        <a href="Contact.html">Contact</a>
+                    </div>
+
                 </div>
             </div>
             <div class="footer-copyright white-text pink lighten-3">  
                 <p>
                     <div class="container left-align">Copyright &copy; 2023</div>
                 </p>   
+                <div class="col s12 l3 lighten-4">
+                    <a href="#">Terms & Conditions</a>
+                </div> 
             </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
@@ -385,5 +275,32 @@
             });
         </script>
         <script src="RelatedPosts_Modal.js"></script>
+        <!-- Vue JS -->
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+        <script>
+            $(document).ready(function(){ 
+                $(".primaryContained").on('click', function(){
+                    $(".comment").addClass("commentClicked");
+                });//end click
+                $("textarea").on('keyup.enter', function(){
+                    $(".comment").addClass("commentClicked");
+                });//end keyup
+            });//End Function
+            
+            new Vue({
+                el: "#app",
+                data:{
+                    title: 'Add a comment',
+                    newItem: '',
+                    item: [],
+                },
+                methods:{
+                    addItem  (){
+                        this.item.push(this.newItem);
+                        this.newItem = "";
+                    }
+                }
+            });
+        </script>
     </body>
 </html>

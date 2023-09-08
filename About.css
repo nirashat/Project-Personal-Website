@@ -17,7 +17,7 @@ h1{
 p.who{
     text-align: center;
     font-family: 'Cormorant', serif;
-    font-size: 24px;
+    font-size: 26px;
 }
 
 p.details{
@@ -45,6 +45,33 @@ button.btn{
     width: 75%;
     height: auto;
     border-radius: 40px;
+}
+#modded {
+    .progress {
+		min-height: 36px;
+		overflow: hidden;
+		position: relative;
+		span {
+			i {
+				width: inherit;
+				font-size: inherit;
+				position: relative;
+				top: 2px;
+				margin-left: 8px;
+			}
+		}
+        
+	}
+}
+.col.bar{
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+p.skills-bar{
+    text-align: left;
+    font-weight: bold;
+    font-family: 'Walter Turncoat', cursive;
 }
 @keyframes fadeInAnimation {
     0% {
